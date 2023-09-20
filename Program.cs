@@ -1,16 +1,5 @@
 ﻿// JOHN PRAESTO SUT-23 \\
 
-
-/*
-
-NÄSTA STEG 
-
-En livlina är om det är ett jämnt eller ojämnt tal.
-Kom på en till livlina.
-
-felhantera?
-*/
-
 namespace NumbersGame
 {
     internal class Program
