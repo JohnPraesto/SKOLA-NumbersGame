@@ -1,16 +1,5 @@
 ﻿// JOHN PRAESTO SUT-23 \\
 
-
-/*
-
-NÄSTA STEG 
-
-En livlina är om det är ett jämnt eller ojämnt tal.
-Kom på en till livlina.
-
-felhantera?
-*/
-
 namespace NumbersGame
 {
     internal class Program
@@ -42,19 +31,19 @@ namespace NumbersGame
                 if (guess == number)
                 {
                     Console.Clear();
-                    number = random.Next(1, range[increment]);
                     increment++;
                     Console.WriteLine("RÄTT!");
                     Console.WriteLine($"Du har klarat nivå {increment}! Rätt gissning var {guess}.\n");
                     if (increment == 4)
                         break;
+                    number = random.Next(1, range[increment]);
                     Console.WriteLine($"Du har {guessesLeft} gissningar kvar.");
                     Console.WriteLine("Tryck Enter för att komma till nästa nivå");
                     Console.ReadLine();
                     Console.Clear();
                 }
 
-                else if (guessesLeft == 1)
+                else if (guessesLeft == 0)
                     break;
 
                 // Anpassade "närhets-intervall" utefter svårighetsgrad:
